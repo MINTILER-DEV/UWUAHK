@@ -1,0 +1,15 @@
+# Put a copy of this file named uwuifier.conf next to uwuifier.exe
+# or in the current working directory.
+#
+# mode can be classic, ai, or hybrid.
+mode=classic
+
+# Default Ollama endpoint and model.
+ollama_url=http://127.0.0.1:11434
+ollama_model=llama3.2
+
+# If Ollama is down or too slow, classic uwuification is used by default.
+ollama_timeout_ms=8000
+ollama_temperature=0.35
+ollama_max_tokens=512
+fallback_to_classic=true

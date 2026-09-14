@@ -28,7 +28,7 @@ if not exist "build" mkdir "build"
 
 :: 5. Execute the build using the dynamically discovered path
 echo Found MSYS2 at: %MSYS_PATH%
-"%MSYS_PATH%\msys2_shell.cmd" -ucrt64 -defterm -no-start -here -c "g++ -std=c++20 -static-libgcc -static-libstdc++ src/main.cpp src/uwuifier.cpp -o build/uwuifier.exe"
+"%MSYS_PATH%\msys2_shell.cmd" -ucrt64 -defterm -no-start -here -c "g++ -std=c++20 -static-libgcc -static-libstdc++ src/main.cpp src/uwuifier.cpp src/ollama_client.cpp -lwinhttp -o build/uwuifier.exe"
 
 if %ERRORLEVEL% EQU 0 (
     echo Build successful! File saved to build/uwuifier.exe
