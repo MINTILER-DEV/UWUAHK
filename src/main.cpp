@@ -227,7 +227,7 @@ namespace {
     ) {
         return
             "/no_think\n\n"
-            "Rewrite the following text into cute uwu style.\n"
+            "Rewrite the following text into cute uwu style. ex: \"hi, how are you doing?\" -> \"h-hwi? >w< how aww yuwww d-doing? ✨ uwu~\" \n"
             "Keep the original meaning, language, paragraph breaks, and rough length.\n"
             "Preserve URLs, code, commands, and file paths exactly when possible.\n"
             "Return only the transformed text, with no quotes or explanation.\n\n"
